@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Order | Balin Sweety</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Balin Sweety</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="custom.html">Custom Orders</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <a href="menu.html" class="btn">Order Now</a>
+    </nav>
+
+    <section class="form-section">
+        <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 30px;">Direct Order Form</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="directOrderForm">
+
+    <input type="hidden" name="access_key" value="bf10f721-9008-4cb7-b2a4-9941ea9876cc">
+    
+    <input type="hidden" name="redirect" value="https://yourwebsite.com/index.html">>
+            <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" required></div>
+            <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+            <div class="form-group">
+                <label>Dessert Category</label>
+                <select name="category">
+                    <option value="Cookies">Cookies</option>
+                    <option value="Crinkles">Crinkles</option>
+                    <option value="Macarons">Macarons</option>
+                    <option value="Mini Cakes">Mini Cakes</option>
+                    <option value="Traditional Sweets">Traditional Sweets</option>
+                </select>
+            </div>
+            <div class="form-group"><label>Product Name</label><input type="text" name="product" placeholder="e.g., Mini Strawberry Cake" required></div>
+            <div class="form-group"><label>Quantity</label><input type="number" name="quantity" min="1" value="1" required></div>
+            <div class="form-group"><label>Desired Date</label><input type="date" name="date" required></div>
+            <div class="form-group"><label>Message / Details</label><textarea name="message" rows="3"></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Order</button>
+        </form>
+    </section>
+
+</body>
+</html>
