@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Orders | Balin Sweety</title>
+    <title>Custom Orders | Balin Swetty</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Balin Sweety</div>
+        <div class="logo">Balin Swetty</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
@@ -24,7 +24,13 @@
         <h2 style="font-size: 2.8rem; margin-bottom: 10px;">Custom Dessert Orders</h2>
         <p style="color: var(--text-muted); margin-bottom: 40px;">Large orders for events, weddings, and special celebrations.</p>
 
-        <form id="customOrderForm">
+        <form action="https://api.web3forms.com/submit" method="POST" id="directOrderForm">
+
+    <input type="hidden" name="access_key" value="bf10f721-9008-4cb7-b2a4-9941ea9876cc">
+    
+    <input type="hidden" name="redirect" value="https://balin-sw.vercel.app/">
+        
+        
             <div class="form-group">
                 <label>Full Name</label>
                 <input type="text" name="name" required placeholder="Your beautiful name">
